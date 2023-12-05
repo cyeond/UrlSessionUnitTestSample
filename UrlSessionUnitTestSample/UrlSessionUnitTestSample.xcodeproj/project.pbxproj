@@ -14,6 +14,9 @@
 		7813E23D2B1EB11900267669 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7813E23C2B1EB11900267669 /* Assets.xcassets */; };
 		7813E2402B1EB11900267669 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7813E23E2B1EB11900267669 /* LaunchScreen.storyboard */; };
 		7813E24E2B1EB12500267669 /* UrlSessionUnitTestSampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7813E24D2B1EB12500267669 /* UrlSessionUnitTestSampleTests.swift */; };
+		7813E25A2B1EC9B000267669 /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7813E2592B1EC9B000267669 /* API.swift */; };
+		7813E25D2B1ECA2C00267669 /* APIError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7813E25C2B1ECA2C00267669 /* APIError.swift */; };
+		7813E2602B1ECB9C00267669 /* URLSessionProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7813E25F2B1ECB9C00267669 /* URLSessionProtocol.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,6 +40,9 @@
 		7813E2412B1EB11900267669 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7813E24B2B1EB12500267669 /* UrlSessionUnitTestSampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UrlSessionUnitTestSampleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7813E24D2B1EB12500267669 /* UrlSessionUnitTestSampleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UrlSessionUnitTestSampleTests.swift; sourceTree = "<group>"; };
+		7813E2592B1EC9B000267669 /* API.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
+		7813E25C2B1ECA2C00267669 /* APIError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIError.swift; sourceTree = "<group>"; };
+		7813E25F2B1ECB9C00267669 /* URLSessionProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLSessionProtocol.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,13 +84,9 @@
 		7813E2322B1EB11800267669 /* UrlSessionUnitTestSample */ = {
 			isa = PBXGroup;
 			children = (
-				7813E2332B1EB11800267669 /* AppDelegate.swift */,
-				7813E2352B1EB11800267669 /* SceneDelegate.swift */,
-				7813E2372B1EB11800267669 /* ViewController.swift */,
-				7813E2392B1EB11800267669 /* Main.storyboard */,
-				7813E23C2B1EB11900267669 /* Assets.xcassets */,
-				7813E23E2B1EB11900267669 /* LaunchScreen.storyboard */,
-				7813E2412B1EB11900267669 /* Info.plist */,
+				7813E2562B1EC8DE00267669 /* Application */,
+				7813E2582B1EC9A000267669 /* API */,
+				7813E25E2B1ECB8400267669 /* TestDouble */,
 			);
 			path = UrlSessionUnitTestSample;
 			sourceTree = "<group>";
@@ -95,6 +97,37 @@
 				7813E24D2B1EB12500267669 /* UrlSessionUnitTestSampleTests.swift */,
 			);
 			path = UrlSessionUnitTestSampleTests;
+			sourceTree = "<group>";
+		};
+		7813E2562B1EC8DE00267669 /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				7813E2332B1EB11800267669 /* AppDelegate.swift */,
+				7813E2352B1EB11800267669 /* SceneDelegate.swift */,
+				7813E2372B1EB11800267669 /* ViewController.swift */,
+				7813E2392B1EB11800267669 /* Main.storyboard */,
+				7813E23E2B1EB11900267669 /* LaunchScreen.storyboard */,
+				7813E23C2B1EB11900267669 /* Assets.xcassets */,
+				7813E2412B1EB11900267669 /* Info.plist */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		7813E2582B1EC9A000267669 /* API */ = {
+			isa = PBXGroup;
+			children = (
+				7813E2592B1EC9B000267669 /* API.swift */,
+				7813E25C2B1ECA2C00267669 /* APIError.swift */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		7813E25E2B1ECB8400267669 /* TestDouble */ = {
+			isa = PBXGroup;
+			children = (
+				7813E25F2B1ECB9C00267669 /* URLSessionProtocol.swift */,
+			);
+			path = TestDouble;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -198,9 +231,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7813E2602B1ECB9C00267669 /* URLSessionProtocol.swift in Sources */,
 				7813E2382B1EB11800267669 /* ViewController.swift in Sources */,
 				7813E2342B1EB11800267669 /* AppDelegate.swift in Sources */,
 				7813E2362B1EB11800267669 /* SceneDelegate.swift in Sources */,
+				7813E25A2B1EC9B000267669 /* API.swift in Sources */,
+				7813E25D2B1ECA2C00267669 /* APIError.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -370,7 +406,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 5WNP4LSBY4;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = UrlSessionUnitTestSample/Info.plist;
+				INFOPLIST_FILE = UrlSessionUnitTestSample/Application/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -398,7 +434,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 5WNP4LSBY4;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = UrlSessionUnitTestSample/Info.plist;
+				INFOPLIST_FILE = UrlSessionUnitTestSample/Application/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
