@@ -88,3 +88,5 @@ fastlane/test_output
 # https://github.com/johnno1962/injectionforxcode
 
 iOSInjectionProject/
+UrlSessionUnitTestSample/UrlSessionUnitTestSample.xcodeproj/project.xcworkspace/contents.xcworkspacedata
+UrlSessionUnitTestSample/UrlSessionUnitTestSample.xcodeproj/project.xcworkspace/xcshareddata/IDEWorkspaceChecks.plist
