@@ -17,6 +17,10 @@
 		7813E25A2B1EC9B000267669 /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7813E2592B1EC9B000267669 /* API.swift */; };
 		7813E25D2B1ECA2C00267669 /* APIError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7813E25C2B1ECA2C00267669 /* APIError.swift */; };
 		7813E2602B1ECB9C00267669 /* URLSessionProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7813E25F2B1ECB9C00267669 /* URLSessionProtocol.swift */; };
+		7813E2622B1EF07A00267669 /* StubURLSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7813E2612B1EF07A00267669 /* StubURLSession.swift */; };
+		7813E2642B1EF0A800267669 /* DummyData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7813E2632B1EF0A800267669 /* DummyData.swift */; };
+		7813E2662B1EF0F800267669 /* StubURLSessionDataTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7813E2652B1EF0F800267669 /* StubURLSessionDataTask.swift */; };
+		7813E2682B1EF29800267669 /* StubUrlSessionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7813E2672B1EF29800267669 /* StubUrlSessionTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,6 +47,10 @@
 		7813E2592B1EC9B000267669 /* API.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
 		7813E25C2B1ECA2C00267669 /* APIError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIError.swift; sourceTree = "<group>"; };
 		7813E25F2B1ECB9C00267669 /* URLSessionProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLSessionProtocol.swift; sourceTree = "<group>"; };
+		7813E2612B1EF07A00267669 /* StubURLSession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StubURLSession.swift; sourceTree = "<group>"; };
+		7813E2632B1EF0A800267669 /* DummyData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DummyData.swift; sourceTree = "<group>"; };
+		7813E2652B1EF0F800267669 /* StubURLSessionDataTask.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StubURLSessionDataTask.swift; sourceTree = "<group>"; };
+		7813E2672B1EF29800267669 /* StubUrlSessionTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StubUrlSessionTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,6 +103,7 @@
 			isa = PBXGroup;
 			children = (
 				7813E24D2B1EB12500267669 /* UrlSessionUnitTestSampleTests.swift */,
+				7813E2672B1EF29800267669 /* StubUrlSessionTests.swift */,
 			);
 			path = UrlSessionUnitTestSampleTests;
 			sourceTree = "<group>";
@@ -126,6 +135,9 @@
 			isa = PBXGroup;
 			children = (
 				7813E25F2B1ECB9C00267669 /* URLSessionProtocol.swift */,
+				7813E2632B1EF0A800267669 /* DummyData.swift */,
+				7813E2652B1EF0F800267669 /* StubURLSessionDataTask.swift */,
+				7813E2612B1EF07A00267669 /* StubURLSession.swift */,
 			);
 			path = TestDouble;
 			sourceTree = "<group>";
@@ -231,12 +243,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7813E2642B1EF0A800267669 /* DummyData.swift in Sources */,
 				7813E2602B1ECB9C00267669 /* URLSessionProtocol.swift in Sources */,
 				7813E2382B1EB11800267669 /* ViewController.swift in Sources */,
 				7813E2342B1EB11800267669 /* AppDelegate.swift in Sources */,
 				7813E2362B1EB11800267669 /* SceneDelegate.swift in Sources */,
+				7813E2662B1EF0F800267669 /* StubURLSessionDataTask.swift in Sources */,
 				7813E25A2B1EC9B000267669 /* API.swift in Sources */,
 				7813E25D2B1ECA2C00267669 /* APIError.swift in Sources */,
+				7813E2622B1EF07A00267669 /* StubURLSession.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -244,6 +259,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7813E2682B1EF29800267669 /* StubUrlSessionTests.swift in Sources */,
 				7813E24E2B1EB12500267669 /* UrlSessionUnitTestSampleTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

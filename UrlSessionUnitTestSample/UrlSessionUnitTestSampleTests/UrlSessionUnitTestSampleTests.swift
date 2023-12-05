@@ -23,7 +23,7 @@ final class UrlSessionUnitTestSampleTests: XCTestCase {
     
     func test_getData호출시_에러가_nil인지() {
         // given
-        let promise = expectation(description: "Error is nil")
+        let promise = expectation(description: "getData호출시_에러가_nil인지")
         
         // when
         sut.getData {
@@ -38,7 +38,7 @@ final class UrlSessionUnitTestSampleTests: XCTestCase {
     
     func test_getData호출시_획득한데이터의개수가_100개인지() {
         // given
-        let promise = expectation(description: "Data count is equal to 100")
+        let promise = expectation(description: "getData호출시_획득한데이터의개수가_100개인지")
         
         // when
         sut.getData { data, error in
@@ -53,7 +53,7 @@ final class UrlSessionUnitTestSampleTests: XCTestCase {
     
     func test_getData호출시_획득한데이터의모든값들이_빈값이아닌title을가지고있는지() {
         // given
-        let promise = expectation(description: "Every datas have non-empty title.")
+        let promise = expectation(description: "getData호출시_획득한데이터의모든값들이_빈값이아닌title을가지고있는지")
         
         // when
         sut.getData { data, error in
@@ -69,7 +69,7 @@ final class UrlSessionUnitTestSampleTests: XCTestCase {
     
     func test_getData호출시_urlString이빈값이면_invalidUrl에러를반환하는지() {
         // given
-        let promise = expectation(description: "getData returns invalidUrl error if urlString is empty")
+        let promise = expectation(description: "getData호출시_urlString이빈값이면_invalidUrl에러를반환하는지")
         sut.urlString = ""
         
         // when
